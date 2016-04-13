@@ -12,6 +12,8 @@ int main(void) {
 
 	for(x = 1; x <= 5; x++)
 		printf("fn(%f)=%f\n", x, fn(x, a, 4));
+
+	return 0;
 }
 
 double fn(double x, double a[], int n) {

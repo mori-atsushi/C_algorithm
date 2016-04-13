@@ -14,6 +14,8 @@ int main(void) {
 			printf("%d C %d = %3ld  ", n, r, combi(n, r));
 		printf("\n");
 	}
+
+	return 0;
 }
 
 long combi(int n, int r) {
