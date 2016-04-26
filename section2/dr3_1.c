@@ -12,6 +12,8 @@ int main(void) {
 	printf("    x      myexp(x)        exp(x)\n");
 	for(x = -40; x < 40; x = x + 10)
 		printf("%5.1f%14.6g%14.6g\n", x, myexp(x), exp(x));
+
+	return 0;
 }
 
 double myexp(double x) {
