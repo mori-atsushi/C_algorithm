@@ -22,7 +22,7 @@ int main(void) {
 		s[k] = w[k] = 0;
 
 	s[0] = w[0] = 1;
-	for(k = 1; k <= L2; k++) {
+	for(k = 1; k <= N; k++) {
 		ldiv(w, k, w);
 		ladd(s, w, s);
 	}
