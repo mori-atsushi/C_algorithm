@@ -20,9 +20,11 @@ int main(void) {
 void replace(char *text, char *key, char *rep) {
 	char *p;
 	int i;
-	while((p = search(text, key)) != NULL) {
+	p = search(text, key);
+	while(p != NULL) {
 		for(i = 0; i < (int)strlen(rep); i++) /* 置き換え */
 			p[i] = rep[i];
+		p = search(p + strlen(key), key);
 	}
 }
 
