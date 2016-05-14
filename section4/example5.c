@@ -39,10 +39,10 @@ int visit(int i, int j) {
 		visit(i, j + 1);
 	if(success != 1 && m[i + 1][j] == 0)
 		visit(i + 1, j);
-	if(success != 1 && m[i][j + 1] == 0)
-		visit(i, j + 1);
-	if(success != 1 && m[i][j + 1] == 0)
-		visit(i, j + 1);
+	if(success != 1 && m[i][j - 1] == 0)
+		visit(i, j - 1);
+	if(success != 1 && m[i - 1][j] == 0)
+		visit(i - 1, j);
 
 	/* 通過点の表示 */
 	if(success == 1)
