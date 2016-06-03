@@ -22,7 +22,7 @@ void visit(int);
 int main(void) {
 	int i;
 
-	for(i = 1; i < N; i++)
+	for(i = 1; i <= N; i++)
 		v[i] = 0;
 
 	visit(1);
